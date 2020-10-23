@@ -1,4 +1,4 @@
 .idea
 cn_sentiment_analysis/embeddings
-
-
+cn_sentiment_analysis/ckpts
+*/ckpts
