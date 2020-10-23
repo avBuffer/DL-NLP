@@ -13,6 +13,11 @@
 
 ## Models
 
+#### 0. NLP Mind Mapping
+
+- 0.1. **基于深度学习NLP成长之路** in doc folder
+
+
 #### 1. Basic Embedding Model
 
 - 1.1. NNLM(Neural Network Language Model) - **Predict Next Word**
