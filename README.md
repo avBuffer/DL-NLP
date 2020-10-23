@@ -9,6 +9,10 @@
 - Pytorch 1.6.0+
 - Tensorflow 2.0+
 - SpaCy
+- numpy
+- jieba
+- gensim
+- matplotlib
 
 
 ## Models
@@ -63,6 +67,14 @@
   - Paper - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding(2018)](https://arxiv.org/abs/1810.04805)
 
 
+## Examples
+
+#### 1. Chinese sentiment analysis
+
+- 1.1. Chinese sentiment analysis - **中文情感分析**
+  - 词向量下载  
+    链接: https://pan.baidu.com/s/1GerioMpwj1zmju9NkkrsFg , 提取码: x6v3, 下载之后在项目根目录建立"embeddings"文件夹, 解压放到该文件夹, 即可运行代码
+  
 
 ## Reference
 
