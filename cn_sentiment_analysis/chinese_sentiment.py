@@ -54,10 +54,10 @@ def predict_sentiment(text, conf_thresh):
 
 if __name__ == '__main__':
     # 使用gensim加载预训练中文分词embedding
-    embeddings_file = 'embeddings/sgns.zhihu.bigram'
+    embeddings_file = 'embedding/sgns.zhihu.bigram'
     cn_model = KeyedVectors.load_word2vec_format(embeddings_file, binary=False, unicode_errors='ignore')
     embedding_dim = cn_model['自然语言处理'].shape[0]
-    print('词向量的长度为{}'.format(embedding_dim), '自然语言处理=', cn_model['自然语言处理'])
+    print('词向量的长度为{}'.format(embedding_dim), '自然语言处理=', cn_model['自然语言处理'].shape)
 
     train_texts_orig = []
     train_target = []
