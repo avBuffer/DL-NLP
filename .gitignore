@@ -4,13 +4,16 @@
 */embedding
 */data
 */ckpts
+*/model
 
 */*/__pycache__
 */*/embedding
 */*/data
 */*/ckpts
+*/*/model
 
 */*/*/__pycache__
 */*/*/embedding
 */*/*/data
 */*/*/ckpts
+*/*/*/model

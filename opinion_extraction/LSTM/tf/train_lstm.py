@@ -2,7 +2,6 @@ import os
 import gensim
 import numpy as np
 import time
-import random
 import string
 
 import tensorflow
@@ -109,7 +108,6 @@ if __name__ == '__main__':
         
         start = time.time()
         new_state = sess.run(model.init_state)
-
         total_loss = 0
         less_loss = 10000.0
         for epoch in range(config.max_iter):
@@ -138,8 +136,7 @@ if __name__ == '__main__':
                     total_loss = 0
                     correct_a_num = 0
                     correct_p_num = 0
-                    for j in range(config.test_batch_size):
-                        index = random.randint(0, len(x_train)-1)
+                    for index in range(config.test_batch_size):
                         feed_dict[model.x] = x_train[index]
                         feed_dict[model.y1] = y_train_a[index]
                         feed_dict[model.y2] = y_train_p[index]
@@ -151,4 +148,4 @@ if __name__ == '__main__':
                             correct_p_num += 1
                     score1 = float(correct_a_num) * 100 / config.test_batch_size
                     score2 = float(correct_p_num) * 100 / config.test_batch_size
-                    print('epoch:' + str(epoch), 'steps:' + str(i), 'precision: ' + str(score1) + ' '+str(score2))
+                    print('epoch:' + str(epoch), 'steps:' + str(i), 'precision: ' + str(score1) + ' ' + str(score2))
