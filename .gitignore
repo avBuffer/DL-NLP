@@ -5,15 +5,18 @@
 */data
 */ckpts
 */model
+*/log
 
 */*/__pycache__
 */*/embedding
 */*/data
 */*/ckpts
 */*/model
+*/*/log
 
 */*/*/__pycache__
 */*/*/embedding
 */*/*/data
 */*/*/ckpts
 */*/*/model
+*/*/*/log
